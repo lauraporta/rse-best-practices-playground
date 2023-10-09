@@ -6,7 +6,9 @@ on:
 
 jobs:
   create_issues:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest    
+    permissions:
+      issues: write
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
